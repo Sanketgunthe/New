@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoanDepartment]" guice-stage="DEVELOPMENT">
+  <parameter name="sanket" value="1234"/>
+  <listeners>
+    <listener class-name="Test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="a(failed)">
+    <parameter name="sanket" value="kjndskj"/>
+    <classes>
+      <class name="Test.Day1">
+        <methods>
+          <include name="abc" invocation-numbers="0"/>
+          <include name="ab1c"/>
+        </methods>
+      </class> <!-- Test.Day1 -->
+    </classes>
+  </test> <!-- a(failed) -->
+</suite> <!-- Failed suite [LoanDepartment] -->
